@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM drill</title>
+    <style>
+        .red-square{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div>DOM----DRILl</div>
+    <div class="red-square"></div>
+    <ul>
+        <li class="js-target">I lov you</li>
+        <li >I HATE YOU!</li>
+        <li class="js-target">I am a boy.</li>
+        <li class="js-target">I am a girl.</li>
+        <li class="js-target">I am a bam.</li>
+    </ul>
+    <button class="click-me">CLICK MEEEEEEEEEEEEEEEEEEEEEEee</button>
+    <input type="text" placeholder="type here!" onkeyup='keyupFunc()'class="input-text">
+    <p class="place-to-input-copy">place to be input-value</p>
+    <div class="btn-container" onclick='clickFunc()'>
+        <button class='btn'>1</button>
+        <button class='btn'>2</button>
+        <button class='btn'>3</button>
+        <button class='btn'>4</button>
+        <button class='btn'>5</button>
+    </div>
+
+    <script>
+        const btnContainer=document.querySelector('.btn-container')
+        // btnContainer.addEventListener('click', e=>e.target.innerText='CLICKED!')
+        const colorSquare=document.querySelector('.red-square');
+        const button = document.querySelector('.btn');
+        const clickFunc = (e) => e.target.innerText='clicked!===';
+        
+        console.log(colorSquare);
+        colorSquare.style.backgroundColor='green';
+
+        const changeContents = document.querySelectorAll('.js-target');
+        changeContents.forEach(content=>content.innerText='We are the world');
+        const btn =document.querySelector('.click-me');
+        btn.addEventListener('click', ()=>alert('HI=============================='))
+
+        const input =document.querySelector('.input-text');
+        const placeToBeCopied=document.querySelector('.place-to-input-copy')
+        input.addEventListener('keyup', ()=>placeToBeCopied.innerText=input.value)
+        /* 
+        const keyupFunc=()=>{
+            return(
+                placeToBeCopied.innerText= input.value
+            )
+            
+        }
+         */
+    </script>
+    
+</body>
+</html>
