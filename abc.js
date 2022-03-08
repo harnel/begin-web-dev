@@ -8,17 +8,5 @@ function addFive(num) {
   // globalVar='inFunctionl'
   return add(num);
 }
-// console.log(add(3,3));
-console.log(globalVar);
-console.log(addFive(10));
-console.log(globalVar);
-// console.log(add());
-function makeFunc() {
-  var name = "Mozilla";
-  function displayName() {
-    console.log(name);
-  }
-  return displayName;
-}
-
-+++++++++++++++++++++++++++++++++++++++
+QQQQQQQQQQQQQQQQQQQ
+same bracnh i Github
