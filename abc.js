@@ -89,16 +89,3 @@ const me = {
     country: "USA"
   }
 };
-console.log(`------------------------------------------`);
-console.log(me.name, me['name'].first, me['name']['last']);
-const {name,location} = me;
-let {first, last,second} =name;
-second='3333333';
-console.log('============++++++++++++++++++++++++++++++++===')
-console.log(first, me.name.first, me.name['first'], second);
-console.log(name, location);
-const newName={a:11, 'prop-3':'pop-3', 3:999999,[3]: 80808888,'3':700, $ : 200,}
-const nomo={ _:55, "****": 66, first:9000, [first]:10000}
-console.log(newName.a, newName[3], nomo[first], nomo._, newName.$, nomo['****'])
-console.log( newName)
-console.log(  nomo)
